@@ -3,7 +3,8 @@ const _ = require('lodash');
 var data = [];
 
 function add (name, content) {
-  data.push({ name: name, content: content });
+  var tweetId = Math.floor(Math.random() * 100); 
+  data.push({ name: name, content: content, tweetId: tweetId });
 }
 
 function list () {
@@ -11,7 +12,7 @@ function list () {
 }
 
 function find (properties) {
-  return _.cloneDeep(_.filter(ourArray, properties));
+  return _.cloneDeep(_.filter(data, properties));
 }
 
 module.exports = { add: add, list: list, find: find };
