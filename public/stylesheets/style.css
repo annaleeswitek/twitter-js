@@ -28,6 +28,7 @@ body {
 #wrap > .container {
   padding: 60px 15px 0;
 }
+
 .container .text-muted {
   margin: 20px 0;
 }
@@ -51,9 +52,11 @@ code {
   width: 48px;
   content:url("http://lorempixel.com/48/48");
 }
+
 .content {
   margin-left: 60px;
 }
-.content .by {
+
+.by {
   font-weight: bold;
 }
