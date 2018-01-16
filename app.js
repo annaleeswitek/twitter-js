@@ -4,11 +4,12 @@ const nunjucks = require('nunjucks');
 const app = express();
 const routes = require('./routes');
 
-app.use(volleyball); 
+app.use(volleyball);
 app.use('/', routes);
 
 
-nunjucks.render('index.html', locals, function (err, output) {
+
+nunjucks.render('index.html', function (err, output) {
     console.log(output);
 });
 
